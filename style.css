@@ -1,0 +1,97 @@
+:root {
+    --bg: #0a0a0a;
+    --neon-blue: #00d2ff;
+    --neon-pink: #ff007f;
+    --neon-yellow: #f1ff5c;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    color: var(--neon-pink);
+}
+
+#timer {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.char-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.char-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    transition: 0.4s;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.char-box:hover {
+    filter: grayscale(0%);
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+/* استخدام الروابط التي أرسلتها */
+.bubbles { background-image: url('https://toppng.com/uploads/preview/informative-powerpuff-girl-bubble-sturdy-power-puff-bubbles-powerpuff-girls-clipart-115629748431eovzlolap.png'); border-color: var(--neon-blue); }
+.catwoman { background-image: url('https://cdn.imgbin.com/16/17/24/catwoman-cartoon-depiction-of-a-masked-female-character-6nVHxdyM.jpg'); border-color: var(--neon-pink); }
+.fluttershy { background-image: url('https://toppng.com/uploads/preview/fluttershy-equestria-girl-ek-11549992814maqqlijzjc.png'); border-color: var(--neon-yellow); }
+
+#dynamic-text {
+    font-style: italic;
+    font-weight: 300;
+    height: 20px;
+}
+
+#gift-btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#gift-btn:hover {
+    background: white;
+    color: black;
+}
