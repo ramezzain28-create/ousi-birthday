@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيد ميلاد أوسي الغالية ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1 id="main-title" onclick="celebrate()">عيد ميلاد أوسي ✨</h1>
+        <div id="countdown">00d 00h 00m 00s</div>
+    </header>
+
+    <main>
+        <section class="characters-section">
+            <div class="char-card" onclick="speak('bubbles')">
+                <div class="avatar bubbles-img"></div>
+                <p>بابلز</p>
+                <div id="speech-bubbles" class="speech-bubble">أنا قوية بس أوسي أقوى مني بالمزح! 🍬</div>
+            </div>
+
+            <div class="char-card" onclick="speak('catwoman')">
+                <div class="avatar catwoman-img"></div>
+                <p>كات وومن</p>
+                <div id="speech-catwoman" class="speech-bubble">مين القطة اللي عيد ميلادها قرّب؟ أوسي طبعاً 🐾</div>
+            </div>
+
+            <div class="char-card" onclick="toggleFlutterMode()">
+                <div class="avatar fluttershy-img"></div>
+                <p>فلاترشاي</p>
+            </div>
+        </section>
+
+        <section class="fluttershy-mode">
+            <button id="flutter-btn" onclick="toggleFlutterMode()">لمسة فلاترشاي الهادئة 🦋</button>
+            <p id="flutter-msg"></p>
+        </section>
+
+        <section class="prank-corner">
+            <h3>مفاجأة خاصة لأوسي</h3>
+            <button id="runaway-btn">اضغطي هنا لاستلام هديتك 🎁</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

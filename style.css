@@ -1,0 +1,99 @@
+:root {
+    --yellow: #FFF9C4;
+    --pink: #F8BBD0;
+    --blue: #B3E5FC;
+    --transition: all 0.5s ease;
+}
+
+body {
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+    background: linear-gradient(135deg, var(--yellow), var(--pink), var(--blue));
+    min-height: 100vh;
+    text-align: center;
+    transition: var(--transition);
+}
+
+body.quiet-mode {
+    background: #f0f4f8 !important;
+    filter: sepia(0.3);
+}
+
+#main-title {
+    font-size: 2.5rem;
+    color: #d81b60;
+    cursor: pointer;
+    margin-top: 30px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+#countdown {
+    font-size: 1.2rem;
+    color: #0277bd;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.characters-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 5px solid white;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* روابط الصور التي أرسلتها */
+.bubbles-img { 
+    background-image: url('https://toppng.com/uploads/preview/informative-powerpuff-girl-bubble-sturdy-power-puff-bubbles-powerpuff-girls-clipart-115629748431eovzlolap.png'); 
+    background-size: 80%;
+}
+.catwoman-img { 
+    background-image: url('https://cdn.imgbin.com/16/17/24/catwoman-cartoon-depiction-of-a-masked-female-character-6nVHxdyM.jpg'); 
+    background-size: cover;
+}
+.fluttershy-img { 
+    background-image: url('https://toppng.com/uploads/preview/fluttershy-equestria-girl-ek-11549992814maqqlijzjc.png'); 
+    background-size: 90%;
+}
+
+.speech-bubble {
+    display: none;
+    position: absolute;
+    top: -60px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    width: 120px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+#runaway-btn {
+    padding: 12px 20px;
+    background: #ff5252;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+}
